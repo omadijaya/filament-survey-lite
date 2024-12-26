@@ -2,20 +2,17 @@
 
 namespace Tapp\FilamentSurvey\Resources\SurveyResource\Pages;
 
-use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Illuminate\Database\Eloquent\Model;
 use Tapp\FilamentSurvey\Resources\SurveyResource;
 
 class EditSurvey extends EditRecord
 {
-
     protected static string $resource = SurveyResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
-            Actions\LocaleSwitcher::make(),
         ];
     }
 

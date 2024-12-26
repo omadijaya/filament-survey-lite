@@ -17,7 +17,6 @@ use Tapp\FilamentSurvey\Resources\QuestionResource\Pages;
 
 class QuestionResource extends Resource
 {
-
     protected static ?string $model = Question::class;
 
     public static function getNavigationIcon(): string

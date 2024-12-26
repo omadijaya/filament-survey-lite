@@ -21,7 +21,6 @@ use Tapp\FilamentSurvey\Resources\SurveyResource\RelationManagers\SectionsRelati
 
 class SurveyResource extends Resource
 {
-
     protected static ?string $model = Survey::class;
 
     public static function getNavigationIcon(): string

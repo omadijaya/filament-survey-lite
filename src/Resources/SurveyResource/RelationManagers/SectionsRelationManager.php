@@ -13,7 +13,6 @@ use Filament\Tables\Table;
 
 class SectionsRelationManager extends RelationManager
 {
-
     public static function getTranslatableLocales(): array
     {
         return array_keys(config('filament-survey.languages'));

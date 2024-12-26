@@ -15,7 +15,6 @@ use MattDaneshvar\Survey\Models\Section;
 
 class QuestionsRelationManager extends RelationManager
 {
-
     public static function getTranslatableLocales(): array
     {
         return array_keys(config('filament-survey.languages'));

@@ -2,13 +2,11 @@
 
 namespace Tapp\FilamentSurvey\Resources\QuestionResource\Pages;
 
-use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 use Tapp\FilamentSurvey\Resources\QuestionResource;
 
 class CreateQuestion extends CreateRecord
 {
-
     protected static string $resource = QuestionResource::class;
 
     public $survey_id;
@@ -23,7 +21,6 @@ class CreateQuestion extends CreateRecord
     protected function getHeaderActions(): array
     {
         return [
-            Actions\LocaleSwitcher::make(),
         ];
     }
 }

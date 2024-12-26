@@ -13,7 +13,6 @@ use Tapp\FilamentSurvey\Resources\SectionResource\Pages;
 
 class SectionResource extends Resource
 {
-
     protected static ?string $model = Section::class;
 
     public static function getNavigationIcon(): string

@@ -2,7 +2,6 @@
 
 namespace Tapp\FilamentSurvey\Resources\SurveyResource\Pages;
 
-use Filament\Actions;
 use Filament\Actions\DeleteAction;
 use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
@@ -12,7 +11,6 @@ use Tapp\FilamentSurvey\Resources\SurveyResource;
 
 class ListSurveys extends ListRecords
 {
-
     protected static string $resource = SurveyResource::class;
 
     protected function getActions(): array
@@ -49,7 +47,6 @@ class ListSurveys extends ListRecords
         return [
             Action::make('create')
                 ->url(SurveyResource::getUrl('create')),
-            Actions\LocaleSwitcher::make(),
         ];
     }
 }
