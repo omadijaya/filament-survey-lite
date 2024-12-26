@@ -1,6 +1,6 @@
 {
-    "name": "tapp/filament-survey",
-    "description": "Filament Laravel Survey plugin.",
+    "name": "omadijaya/filament-survey-lite",
+    "description": "Filament Laravel Survey plugin lite version.",
     "keywords": [
         "tapp network",
         "filament",
