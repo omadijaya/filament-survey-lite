@@ -22,23 +22,9 @@ This package provides Filament resources for [Laravel Survey](https://github.com
 
 ### Installing the required package (Laravel Survey)
 
-This plugin uses a modifed version of [Laravel Survey](https://github.com/matt-daneshvar/laravel-survey) package: https://github.com/tappnetwork/laravel-survey/tree/translatable that adds translatable and sortable fields to the survey models. More details in this PR: [matt-daneshvar/laravel-survey#39](https://github.com/matt-daneshvar/laravel-survey/pull/39).
 
-So you must install this version instead of requiring `matt-daneshvar/laravel-survey`. In order to do so, add to your project's `composer.json`:
-
-```php
-"require": {
-    ...
-    "matt-daneshvar/laravel-survey": "dev-translatable",
-},
-
-"repositories": [
-    ...
-    {
-        "type": "vcs",
-        "url": "https://github.com/TappNetwork/laravel-survey"
-    }
-],
+```bash
+composer require matt-daneshvar/laravel-survey
 ```
 
 Install it using Composer
@@ -93,10 +79,8 @@ php artisan vendor:publish --tag="filament-survey-config"
 ### Adding the plugin to a panel
 
 Add this plugin to a panel on `plugins()` method (e.g. in `app/Providers/Filament/AdminPanelProvider.php`).
-This plugin requires the [Spatie Translatable plugin](https://filamentphp.com/plugins/filament-spatie-translatable), so it should also be added on a panel like so:
 
 ```php
-use Filament\SpatieLaravelTranslatablePlugin;
 use Tapp\FilamentSurvey\FilamentSurveyPlugin;
  
 public function panel(Panel $panel): Panel
@@ -105,7 +89,6 @@ public function panel(Panel $panel): Panel
         // ...
         ->plugins([
             FilamentSurveyPlugin::make(),
-            SpatieLaravelTranslatablePlugin::make(),
             //...
         ]);
 }

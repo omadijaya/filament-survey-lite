@@ -9,7 +9,6 @@ use Tapp\FilamentSurvey\Resources\SurveyResource;
 
 class EditSurvey extends EditRecord
 {
-    use EditRecord\Concerns\Translatable;
 
     protected static string $resource = SurveyResource::class;
 

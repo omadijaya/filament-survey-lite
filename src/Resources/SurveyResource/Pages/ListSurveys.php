@@ -12,7 +12,6 @@ use Tapp\FilamentSurvey\Resources\SurveyResource;
 
 class ListSurveys extends ListRecords
 {
-    use ListRecords\Concerns\Translatable;
 
     protected static string $resource = SurveyResource::class;
 

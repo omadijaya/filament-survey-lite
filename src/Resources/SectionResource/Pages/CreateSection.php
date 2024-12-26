@@ -8,7 +8,6 @@ use Tapp\FilamentSurvey\Resources\SectionResource;
 
 class CreateSection extends CreateRecord
 {
-    use CreateRecord\Concerns\Translatable;
 
     protected static string $resource = SectionResource::class;
 

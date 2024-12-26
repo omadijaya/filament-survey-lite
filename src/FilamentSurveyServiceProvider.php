@@ -13,8 +13,7 @@ class FilamentSurveyServiceProvider extends PackageServiceProvider
     {
         $package->name('filament-survey')
             ->hasConfigFile('filament-survey')
-            ->hasViews('filament-survey')
-            ->hasTranslations();
+            ->hasViews('filament-survey');
     }
 
     public function packageBooted(): void

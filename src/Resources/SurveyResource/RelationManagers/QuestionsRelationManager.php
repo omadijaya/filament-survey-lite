@@ -5,7 +5,6 @@ namespace Tapp\FilamentSurvey\Resources\SurveyResource\RelationManagers;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
-use Filament\Resources\RelationManagers\Concerns\Translatable;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Actions\CreateAction;
@@ -16,7 +15,6 @@ use MattDaneshvar\Survey\Models\Section;
 
 class QuestionsRelationManager extends RelationManager
 {
-    use Translatable;
 
     public static function getTranslatableLocales(): array
     {

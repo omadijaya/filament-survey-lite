@@ -6,7 +6,6 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Notifications\Notification;
-use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Actions\Action;
@@ -22,7 +21,6 @@ use Tapp\FilamentSurvey\Resources\SurveyResource\RelationManagers\SectionsRelati
 
 class SurveyResource extends Resource
 {
-    use Translatable;
 
     protected static ?string $model = Survey::class;
 
