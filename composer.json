@@ -1,6 +1,6 @@
 {
     "name": "omadijaya/filament-survey-lite",
-    "description": "Filament Laravel Survey plugin lite version.",
+    "description": "A fork of TappNetwork/filament-survey without translation support.",
     "keywords": [
         "tapp network",
         "filament",
